@@ -1,0 +1,6 @@
+if [ -z $@ ]
+then
+   . repl
+else
+   rlwrap java -cp $HOME/software/clojure-1.3.0/clojure-1.3.0.jar clojure.main $@
+fi
